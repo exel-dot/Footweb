@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+       <title>FootWEB</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   <style>
+       .list-group-item {
+  height: 80px;
+  width: 80%;
+  background-color: #A1D0F9;
+
+}
+    #p1{
+    position : centre
+    }
+
+
+
+#news-feed {
+  width: 300px;
+}
+
+#news-feed .list-group a:hover {
+  color: var(--primary); /* this variable is provided by the bootstrap */
+}
+.accordion{
+
+
+  width: 279px;
+
+}
+.list-group-item{
+  width: 279px;
+}
+ div.a{
+     font-size: 15px;
+    }
+
+
+
+h3{
+  font-size: 2em;
+
+  }
+  h1{
+  font-size: 1em;
+  }
+
+  h2 {
+  text-decoration: overline;
+  text-decoration: none;
+}
+#tt, #tt2{
+ color: red;
+}
+
+body {
+background: rgb(34,193,195);
+background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(45,63,253,0.6954131994594712) 100%);
+}
+#ee{
+margin-bottom: 20px;
+}
+
+
+ </style>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center" id="ee">
+  <div class="card-header">
+    <h2>FUNKCJONALNOŚĆ STRONY</h2>
+      <h1>AUTOR: Mateusz Borawski</h1>
+
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">WYNIKI LIVE</h5>
+    <p class="card-text">MOŻESZ SPRAWDZIĆ WYNIKI AKTUALNIE ROZGRYWANYCH MECZÓW</p>
+      <p class="card-text">DODATKOWO DZIĘKI ROZSUWANEJ LIŚCIE MOŻESZ SPRAWDZIĆ KRAJ ORAZ LIGĘ Z TYCH ROZGRYWEK</p>
+      <p class="card-text" id="tt">Proszę o nierobienie niepotrzebnych requestów, gdyż darmowa wersja API FLESHSCORE posiada tylko 500 requestów na miesiąc :)</p>
+
+
+    <a href="/" class="btn btn-primary">SPRAWDŹ WYNIKI!</a>
+  </div>
+
+  <div class="card-footer text-muted">
+
+
+  </div>
+</div>
+<div class="card text-center">
+
+  <div class="card-body">
+    <h5 class="card-title">GRA</h5>
+    <p class="card-text">WYLOSUJ MECZ Z MISTRZOSTW ŚWIATA 2018 (PRZYCISK START)</p>
+      <p class="card-text">MASZ 1 MINUTĘ NA WYPISANIE WYJŚCIOWEJ 11</p>
+       <p class="card-text"> ZA KAŻDE DOBRE WYPISANIE NAZWISKA=1 PUNKT</p>
+        <p class="card-text"> PO UPŁYNIĘCIU CZASU MOŻESZ SPRAWDZIĆ NIEODKRYTE NAZWISKA PRZYCISKIEM "Sprawdź" </p>
+       <p class="card-text" id="tt2">Proszę o nierobienie niepotrzebnych requestów, gdyż darmowa wersja API FLESHSCORE posiada tylko 500 requestów na miesiąc :)</p>
+
+    <a href="/page-1" class="btn btn-primary">ZAGRAJ!</a>
+  </div>
+
+  <div class="card-footer text-muted">
+
+
+  </div>
+</div>
+{% endblock %}
+</body>
+
+</html>
+
+
+
+
