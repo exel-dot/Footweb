@@ -1,1 +1,0 @@
-web: gunicorn foottweb.wsgi --log-file -
